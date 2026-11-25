@@ -1,0 +1,53 @@
+export const ANSWERS = [
+  'about', 'adore', 'alert', 'alone', 'apple', 'beach', 'begin', 'black',
+  'brave', 'bread', 'brick', 'bring', 'broad', 'build', 'cabin', 'carry',
+  'charm', 'chess', 'clean', 'clear', 'climb', 'clock', 'cloud', 'coach',
+  'coast', 'crane', 'dance', 'dream', 'drink', 'eager', 'earth', 'enjoy',
+  'faith', 'flame', 'focus', 'fresh', 'fruit', 'ghost', 'grace', 'grand',
+  'grass', 'great', 'green', 'happy', 'heart', 'honey', 'house', 'human',
+  'ivory', 'judge', 'juice', 'laugh', 'lemon', 'light', 'lucky', 'magic',
+  'metal', 'might', 'music', 'ocean', 'olive', 'paint', 'peace', 'plant',
+  'power', 'pride', 'quiet', 'radio', 'raise', 'reach', 'river', 'round',
+  'scale', 'share', 'shine', 'sight', 'smart', 'smile', 'sound', 'space',
+  'spare', 'speak', 'spice', 'spoon', 'stage', 'stone', 'store', 'storm',
+  'story', 'sweet', 'table', 'teach', 'tiger', 'today', 'touch', 'train',
+  'trust', 'under', 'value', 'visit', 'voice', 'watch', 'water', 'whale',
+  'while', 'white', 'whole', 'world', 'write', 'young',
+];
+
+export const VALID_GUESSES = new Set([
+  ...ANSWERS,
+  'adapt', 'agile', 'amber', 'angel', 'ankle', 'arena', 'avoid', 'award',
+  'baker', 'basic', 'batch', 'being', 'below', 'blame', 'blind', 'blown',
+  'board', 'bonus', 'bound', 'brain', 'brush', 'burst', 'buyer', 'candy',
+  'cargo', 'cause', 'chain', 'chair', 'chase', 'cheap', 'chief', 'child',
+  'claim', 'class', 'clerk', 'click', 'close', 'count', 'cover', 'craft',
+  'crash', 'crowd', 'crown', 'curve', 'cycle', 'daily', 'debut', 'delay',
+  'depth', 'dirty', 'doubt', 'dozen', 'dress', 'drive', 'early', 'eight',
+  'elect', 'empty', 'entry', 'equal', 'error', 'event', 'every', 'exact',
+  'exist', 'extra', 'false', 'fancy', 'fault', 'field', 'final', 'first',
+  'floor', 'fluid', 'force', 'frame', 'funny', 'giant', 'given', 'glass',
+  'globe', 'going', 'grade', 'grant', 'guard', 'guest', 'guide', 'habit',
+  'heavy', 'honor', 'ideal', 'image', 'index', 'inner', 'input', 'issue',
+  'joint', 'known', 'label', 'large', 'later', 'layer', 'learn', 'leave',
+  'legal', 'level', 'local', 'loose', 'major', 'match', 'maybe', 'media',
+  'menu', 'mercy', 'minor', 'model', 'month', 'motor', 'mount', 'movie',
+  'never', 'night', 'noise', 'north', 'novel', 'nurse', 'offer', 'often',
+  'order', 'other', 'owner', 'panel', 'paper', 'party', 'phase', 'phone',
+  'piece', 'pilot', 'pitch', 'place', 'plain', 'plane', 'plate', 'point',
+  'pound', 'press', 'price', 'print', 'prior', 'prize', 'proof', 'proud',
+  'quick', 'quite', 'range', 'ratio', 'reply', 'right', 'rival', 'rough',
+  'royal', 'score', 'sense', 'seven', 'shape', 'shift', 'shirt', 'shock',
+  'short', 'shown', 'silly', 'since', 'skill', 'sleep', 'slice', 'solid',
+  'sorry', 'south', 'speed', 'spend', 'split', 'sport', 'staff', 'steam',
+  'steel', 'still', 'study', 'stuff', 'style', 'sugar', 'super', 'taken',
+  'taste', 'thank', 'there', 'these', 'thing', 'think', 'those', 'three',
+  'throw', 'tight', 'title', 'total', 'track', 'trade', 'treat', 'trend',
+  'trial', 'truly', 'twice', 'union', 'until', 'upper', 'urban', 'usual',
+  'video', 'where', 'which', 'woman', 'women', 'worry', 'worth', 'would',
+  'worse', 'worst', 'wrong', 'yield', 'zebra',
+]);
+
+export function getRandomAnswer() {
+  return ANSWERS[Math.floor(Math.random() * ANSWERS.length)];
+}
